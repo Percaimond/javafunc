@@ -42,5 +42,25 @@ public class Exercise1Task2Test {
 		List<String> results3 = TokenScanner.scanner("fuchs du hast,,,,,, die Ganz gestohlendlf *;;;LKJLOIOKJ*,;");
 		assertEquals(poggers, results3);
 	}
+	@Test
+	public void test6() {
+		List<String> list = Arrays.asList("from", ",", "from", ",",",","from");
+		List<String> results = TokenScanner.scanner("from,from,,from");
+		assertEquals(list, results);
+	}
+
+	@Test
+	public void test444() {
+		List<String> list = Arrays.asList("fsuzs", "Updih", "wher", "UPDATE", "8768");
+		List<String> results = TokenScanner.scanner("fsuzs\t\t\tUpdih         wher UPDATE8768");
+		assertEquals(list, results);
+	}
+
+	@Test
+	public void test45() {
+		List<String> list = Arrays.asList("4987398", "fromfrom");
+		List<String> results = TokenScanner.scanner("4987398fromfrom");
+		assertEquals(list, results);
+	}
 
 }
