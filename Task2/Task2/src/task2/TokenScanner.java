@@ -40,6 +40,7 @@ public class TokenScanner {
         //und last iteration
         for(int j = 0; j<characterArray.length; j++){
             char nextChar = characterArray[j];
+            //char lastChar = characterArray[j-1];
             if(nextChar == ' '){
                 if(currentToken.length()==0) {
                     continue;
