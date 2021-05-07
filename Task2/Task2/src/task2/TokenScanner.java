@@ -1,5 +1,6 @@
 package task2;
 
+
 import java.util.*;
 
 
@@ -61,9 +62,9 @@ public class TokenScanner {
                 }
             }else if(((charEquals(nextChar,figures))&&(charEquals(lastChar,candidates)))||
                     ((charEquals(nextChar,candidates))&&(charEquals(lastChar,figures)))) {
-                    results.add(String.valueOf(currentToken));
-                    currentToken.setLength(0);
-                    currentToken.append(nextChar);
+                results.add(String.valueOf(currentToken));
+                currentToken.setLength(0);
+                currentToken.append(nextChar);
             }else if(!((charEquals(nextChar,candidates))||((charEquals(nextChar,figures))))){
                 return null;
             }else if(j==characterArray.length-1){
@@ -76,7 +77,7 @@ public class TokenScanner {
         return results;
     }
     public static void main(String[] args){
-        String testtingmesting = "u78787878uiuiuiuiui 7uu7uu7uu7uu7u\n7  hjfjh ff\n\n\n\n\n\n ";
+        String testtingmesting = "u78787878uiuiuiuiui 7uu7uu7uu7uu7u\n7  hjfjh ff\n\n\n\n\n\n";
         System.out.println(scanner(testtingmesting));
     }
 }

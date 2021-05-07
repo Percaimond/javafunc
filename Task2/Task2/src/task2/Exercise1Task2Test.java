@@ -43,24 +43,44 @@ public class Exercise1Task2Test {
 		assertEquals(poggers, results3);
 	}
 	@Test
+	public void test5() {
+		List<String> list = Arrays.asList("zup", ",", "*","from", ",",",",";",";","from");
+		List<String> results = TokenScanner.scanner("zup,*from,,;;from");
+		assertEquals(list, results);
+	}
+
+	@Test
 	public void test6() {
-		List<String> list = Arrays.asList("from", ",", "from", ",",",","from");
-		List<String> results = TokenScanner.scanner("from,from,,from");
+		List<String> list = Arrays.asList("UPdUpdUp", "movFGGGIB", "lherl", "UPDATE", "7899978");
+		List<String> results = TokenScanner.scanner("UPdUpdUp\t\t\tmovFGGGIB         lherl UPDATE7899978");
 		assertEquals(list, results);
 	}
 
 	@Test
-	public void test444() {
-		List<String> list = Arrays.asList("fsuzs", "Updih", "wher", "UPDATE", "8768");
-		List<String> results = TokenScanner.scanner("fsuzs\t\t\tUpdih         wher UPDATE8768");
+	public void test7() {
+		List<String> list = Arrays.asList("16547891", "SELECETSELECET");
+		List<String> results = TokenScanner.scanner("16547891SELECETSELECET");
+		assertEquals(list, results);
+	}
+	@Test
+	public void test8() {
+		List<String> list = Arrays.asList("from", ",", "UPDATEfrom", ",",";",";",",","from");
+		List<String> results = TokenScanner.scanner("from,UPDATEfrom,;;,from");
 		assertEquals(list, results);
 	}
 
 	@Test
-	public void test45() {
-		List<String> list = Arrays.asList("4987398", "fromfrom");
-		List<String> results = TokenScanner.scanner("4987398fromfrom");
+	public void test9() {
+		List<String> list = Arrays.asList("lolol", "zzozioiooi", "from","FROM","wherl", "UPDATE", "8768");
+		List<String> results = TokenScanner.scanner("lolol\t\t\tzzozioiooi from\nFROM       wherl UPDATE8768");
 		assertEquals(list, results);
+	}
+
+	@Test
+	public void test0() {
+		List<String> wrong = null;
+		List<String> results = TokenScanner.scanner("4987398äfromfrom");
+		assertEquals(wrong, results);
 	}
 
 }

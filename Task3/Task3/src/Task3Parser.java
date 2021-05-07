@@ -1,4 +1,4 @@
-// Generated from .\Task3.g4 by ANTLR 4.9.2
+// Generated from C:\Users\danie\Downloads\pp3\Exercise1\Task3\Task3\src\Task3.g4 by ANTLR 4.9.2
 import org.antlr.v4.runtime.atn.*;
 import org.antlr.v4.runtime.dfa.DFA;
 import org.antlr.v4.runtime.*;
@@ -17,12 +17,12 @@ public class Task3Parser extends Parser {
 		new PredictionContextCache();
 	public static final int
 		SELECT_=1, DELETE_=2, UPDATE_=3, WHERE_=4, FROM_=5, SCOL=6, COMMA=7, STAR=8, 
-		IDENTIFIER=9, LETTER=10, NUMBER=11, DIGIT=12, DIGITO=13, WS2=14, WS=15;
+		IDENTIFIER=9, LETTER=10, NUMBER=11, DIGIT=12, WS=13;
 	public static final int
-		RULE_startnorm = 0, RULE_start = 1;
+		RULE_start = 0;
 	private static String[] makeRuleNames() {
 		return new String[] {
-			"startnorm", "start"
+			"start"
 		};
 	}
 	public static final String[] ruleNames = makeRuleNames();
@@ -36,7 +36,7 @@ public class Task3Parser extends Parser {
 	private static String[] makeSymbolicNames() {
 		return new String[] {
 			null, "SELECT_", "DELETE_", "UPDATE_", "WHERE_", "FROM_", "SCOL", "COMMA", 
-			"STAR", "IDENTIFIER", "LETTER", "NUMBER", "DIGIT", "DIGITO", "WS2", "WS"
+			"STAR", "IDENTIFIER", "LETTER", "NUMBER", "DIGIT", "WS"
 		};
 	}
 	private static final String[] _SYMBOLIC_NAMES = makeSymbolicNames();
@@ -90,61 +90,6 @@ public class Task3Parser extends Parser {
 		_interp = new ParserATNSimulator(this,_ATN,_decisionToDFA,_sharedContextCache);
 	}
 
-	public static class StartnormContext extends ParserRuleContext {
-		public TerminalNode SELECT_() { return getToken(Task3Parser.SELECT_, 0); }
-		public TerminalNode DELETE_() { return getToken(Task3Parser.DELETE_, 0); }
-		public TerminalNode UPDATE_() { return getToken(Task3Parser.UPDATE_, 0); }
-		public TerminalNode WHERE_() { return getToken(Task3Parser.WHERE_, 0); }
-		public TerminalNode FROM_() { return getToken(Task3Parser.FROM_, 0); }
-		public TerminalNode SCOL() { return getToken(Task3Parser.SCOL, 0); }
-		public TerminalNode COMMA() { return getToken(Task3Parser.COMMA, 0); }
-		public TerminalNode STAR() { return getToken(Task3Parser.STAR, 0); }
-		public TerminalNode IDENTIFIER() { return getToken(Task3Parser.IDENTIFIER, 0); }
-		public TerminalNode NUMBER() { return getToken(Task3Parser.NUMBER, 0); }
-		public StartnormContext(ParserRuleContext parent, int invokingState) {
-			super(parent, invokingState);
-		}
-		@Override public int getRuleIndex() { return RULE_startnorm; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Task3Listener ) ((Task3Listener)listener).enterStartnorm(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Task3Listener ) ((Task3Listener)listener).exitStartnorm(this);
-		}
-	}
-
-	public final StartnormContext startnorm() throws RecognitionException {
-		StartnormContext _localctx = new StartnormContext(_ctx, getState());
-		enterRule(_localctx, 0, RULE_startnorm);
-		int _la;
-		try {
-			enterOuterAlt(_localctx, 1);
-			{
-			setState(4);
-			_la = _input.LA(1);
-			if ( !((((_la) & ~0x3f) == 0 && ((1L << _la) & ((1L << SELECT_) | (1L << DELETE_) | (1L << UPDATE_) | (1L << WHERE_) | (1L << FROM_) | (1L << SCOL) | (1L << COMMA) | (1L << STAR) | (1L << IDENTIFIER) | (1L << NUMBER))) != 0)) ) {
-			_errHandler.recoverInline(this);
-			}
-			else {
-				if ( _input.LA(1)==Token.EOF ) matchedEOF = true;
-				_errHandler.reportMatch(this);
-				consume();
-			}
-			}
-		}
-		catch (RecognitionException re) {
-			_localctx.exception = re;
-			_errHandler.reportError(this, re);
-			_errHandler.recover(this, re);
-		}
-		finally {
-			exitRule();
-		}
-		return _localctx;
-	}
-
 	public static class StartContext extends ParserRuleContext {
 		public TerminalNode SELECT_() { return getToken(Task3Parser.SELECT_, 0); }
 		public TerminalNode DELETE_() { return getToken(Task3Parser.DELETE_, 0); }
@@ -172,12 +117,12 @@ public class Task3Parser extends Parser {
 
 	public final StartContext start() throws RecognitionException {
 		StartContext _localctx = new StartContext(_ctx, getState());
-		enterRule(_localctx, 2, RULE_start);
+		enterRule(_localctx, 0, RULE_start);
 		int _la;
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(6);
+			setState(2);
 			_la = _input.LA(1);
 			if ( !((((_la) & ~0x3f) == 0 && ((1L << _la) & ((1L << SELECT_) | (1L << DELETE_) | (1L << UPDATE_) | (1L << WHERE_) | (1L << FROM_) | (1L << SCOL) | (1L << COMMA) | (1L << STAR) | (1L << IDENTIFIER) | (1L << NUMBER))) != 0)) ) {
 			_errHandler.recoverInline(this);
@@ -201,9 +146,9 @@ public class Task3Parser extends Parser {
 	}
 
 	public static final String _serializedATN =
-		"\3\u608b\ua72a\u8133\ub9ed\u417c\u3be7\u7786\u5964\3\21\13\4\2\t\2\4\3"+
-		"\t\3\3\2\3\2\3\3\3\3\3\3\2\2\4\2\4\2\3\4\2\3\13\r\r\2\b\2\6\3\2\2\2\4"+
-		"\b\3\2\2\2\6\7\t\2\2\2\7\3\3\2\2\2\b\t\t\2\2\2\t\5\3\2\2\2\2";
+		"\3\u608b\ua72a\u8133\ub9ed\u417c\u3be7\u7786\u5964\3\17\7\4\2\t\2\3\2"+
+		"\3\2\3\2\2\2\3\2\2\3\4\2\3\13\r\r\2\5\2\4\3\2\2\2\4\5\t\2\2\2\5\3\3\2"+
+		"\2\2\2";
 	public static final ATN _ATN =
 		new ATNDeserializer().deserialize(_serializedATN.toCharArray());
 	static {

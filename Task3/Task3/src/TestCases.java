@@ -53,4 +53,40 @@ public class TestCases {
 		testInput(input, true, 3);
 	}
 
+	@Test
+	public void test4(){
+		String input = "UPDATE RULE76767;;poggers";
+		testInput(input, false, 6);
+	}
+
+	@Test
+	public void test5(){
+		String input = ";;;;;;;;;\nokidoki\nokimoke234234";
+		testInput(input, false,12);
+	}
+
+	@Test
+	public void test6(){
+		String input = "UPDATE RULE ;* +";
+		testInput(input, true,4);
+	}
+
+	@Test
+	public void test7(){
+		String input = "fromfromfromfromfrom";
+		testInput(input,false ,1);
+	}
+
+	@Test
+	public void test8(){
+		String input = "SELECT 567 FROM where X Y;";
+		testInput(input,false ,7);
+	}
+
+	@Test
+	public void test9(){
+		String input = "***********";
+		testInput(input, false,11);
+	}
+
 }

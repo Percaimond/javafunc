@@ -15,6 +15,8 @@ grammar Task3;
 	LETTER : [a-zA-Z];
 	NUMBER : DIGIT+;
 	DIGIT : [0-9];
+
+
 // DON'T MODIFY BELOW THIS LINE
 
 // 2) Rules that specify the grammar of the language.

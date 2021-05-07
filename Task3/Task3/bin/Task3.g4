@@ -3,17 +3,6 @@ grammar Task3;
 // 1) Rules to specify the tokens of the language.
 
 // TODO: insert rules here
-startnorm:
-    SELECT_
-    | DELETE_
-    | UPDATE_
-    | WHERE_
-    | FROM_
-    | SCOL
-    | COMMA
-    | STAR
-    | IDENTIFIER
-    | NUMBER;
     SELECT_ : 'SELECT'|'select';
 	DELETE_ : 'DELETE'|'delete';
 	UPDATE_ : 'UPDATE'|'update';
@@ -24,11 +13,9 @@ startnorm:
 	STAR : '*';
 	IDENTIFIER : LETTER+LETTER*;
 	LETTER : [a-zA-Z];
-	NUMBER : DIGIT+DIGITO*;
-	DIGIT : [1-9];
-	DIGITO : [0-9];
+	NUMBER : DIGIT+;
+	DIGIT : [0-9];
 
-WS2: [ \t\r\n]+ -> skip;
 
 // DON'T MODIFY BELOW THIS LINE
 

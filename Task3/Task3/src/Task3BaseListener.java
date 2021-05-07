@@ -1,4 +1,4 @@
-// Generated from .\Task3.g4 by ANTLR 4.9.2
+// Generated from C:\Users\danie\Downloads\pp3\Exercise1\Task3\Task3\src\Task3.g4 by ANTLR 4.9.2
 
 import org.antlr.v4.runtime.ParserRuleContext;
 import org.antlr.v4.runtime.tree.ErrorNode;
@@ -10,18 +10,6 @@ import org.antlr.v4.runtime.tree.TerminalNode;
  * of the available methods.
  */
 public class Task3BaseListener implements Task3Listener {
-	/**
-	 * {@inheritDoc}
-	 *
-	 * <p>The default implementation does nothing.</p>
-	 */
-	@Override public void enterStartnorm(Task3Parser.StartnormContext ctx) { }
-	/**
-	 * {@inheritDoc}
-	 *
-	 * <p>The default implementation does nothing.</p>
-	 */
-	@Override public void exitStartnorm(Task3Parser.StartnormContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
