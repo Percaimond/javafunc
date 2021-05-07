@@ -67,7 +67,7 @@ public class TestCases {
 
 	@Test
 	public void test6(){
-		String input = "UPDATE RULE ;* +";
+		String input = "UPDATEä RULE ;* ";
 		testInput(input, true,4);
 	}
 

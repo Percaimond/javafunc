@@ -17,7 +17,7 @@ public class Task3Parser extends Parser {
 		new PredictionContextCache();
 	public static final int
 		SELECT_=1, DELETE_=2, UPDATE_=3, WHERE_=4, FROM_=5, SCOL=6, COMMA=7, STAR=8, 
-		IDENTIFIER=9, LETTER=10, NUMBER=11, DIGIT=12, WS=13;
+		IDENTIFIER=9, NUMBER=10, WS=11;
 	public static final int
 		RULE_start = 0;
 	private static String[] makeRuleNames() {
@@ -36,7 +36,7 @@ public class Task3Parser extends Parser {
 	private static String[] makeSymbolicNames() {
 		return new String[] {
 			null, "SELECT_", "DELETE_", "UPDATE_", "WHERE_", "FROM_", "SCOL", "COMMA", 
-			"STAR", "IDENTIFIER", "LETTER", "NUMBER", "DIGIT", "WS"
+			"STAR", "IDENTIFIER", "NUMBER", "WS"
 		};
 	}
 	private static final String[] _SYMBOLIC_NAMES = makeSymbolicNames();
@@ -146,9 +146,8 @@ public class Task3Parser extends Parser {
 	}
 
 	public static final String _serializedATN =
-		"\3\u608b\ua72a\u8133\ub9ed\u417c\u3be7\u7786\u5964\3\17\7\4\2\t\2\3\2"+
-		"\3\2\3\2\2\2\3\2\2\3\4\2\3\13\r\r\2\5\2\4\3\2\2\2\4\5\t\2\2\2\5\3\3\2"+
-		"\2\2\2";
+		"\3\u608b\ua72a\u8133\ub9ed\u417c\u3be7\u7786\u5964\3\r\7\4\2\t\2\3\2\3"+
+		"\2\3\2\2\2\3\2\2\3\3\2\3\f\2\5\2\4\3\2\2\2\4\5\t\2\2\2\5\3\3\2\2\2\2";
 	public static final ATN _ATN =
 		new ATNDeserializer().deserialize(_serializedATN.toCharArray());
 	static {

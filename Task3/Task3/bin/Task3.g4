@@ -12,9 +12,9 @@ grammar Task3;
 	COMMA : ',';
 	STAR : '*';
 	IDENTIFIER : LETTER+LETTER*;
-	LETTER : [a-zA-Z];
+fragment	LETTER : [a-zA-Z];
 	NUMBER : DIGIT+;
-	DIGIT : [0-9];
+fragment	DIGIT : [0-9];
 
 
 // DON'T MODIFY BELOW THIS LINE
